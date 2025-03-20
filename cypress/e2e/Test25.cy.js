@@ -1,4 +1,5 @@
-// Test Case 25: Verify Scroll Up using 'Arrow' button and Scroll Down functionality - o čia ne tas pats su 26?
+// Test Case 25: Verify Scroll Up using 'Arrow' button and Scroll Down functionality 
+//- o čia ne tas pats su 26?
 // 1. Launch browser
 // 2. Navigate to url 'http://automationexercise.com'
 // 3. Verify that home page is visible successfully
