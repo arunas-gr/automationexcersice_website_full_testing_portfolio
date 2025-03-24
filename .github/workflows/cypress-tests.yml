@@ -3,10 +3,10 @@ name: Run Cypress Tests
 on:
   push:
     branches:
-      - main  # Runs tests on push to main branch
+      - main
   pull_request:
     branches:
-      - main  # Runs tests on pull requests to main branch
+      - main
 
 jobs:
   cypress-run:
@@ -22,7 +22,9 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm ci
+          npx cypress install  # Ensure Cypress is installed
 
       - name: Run Cypress tests
-        run: npx cypress run
+        run: npx cypress run --browser chrome --headless
