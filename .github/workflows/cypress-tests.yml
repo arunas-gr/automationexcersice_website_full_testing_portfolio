@@ -34,3 +34,7 @@ jobs:
 
       - name: Install Chrome
         run: sudo apt-get install google-chrome-stable
+        run: npx cypress run --browser chrome --headless
+
+      - name: Install Chrome
+        run: sudo apt-get install google-chrome-stable
