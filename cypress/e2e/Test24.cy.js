@@ -32,7 +32,7 @@ describe('Test Case 24: Download Invoice after purchase order', () => {
         // 4. Add products to cart
         cy.get('a[href="/products"]').contains('Products').click();
         cy.url().should('eq', 'https://automationexercise.com/products');
-        cy.get('.product-overlay').first().trigger('mouseover');
+        // cy.get('.product-overlay').first().trigger('mouseover');
 
         // 4. Add products to cart
         cy.contains('Add to cart').click();
