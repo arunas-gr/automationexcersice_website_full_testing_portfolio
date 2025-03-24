@@ -27,7 +27,10 @@ jobs:
           npx cypress install  # Ensure Cypress is installed
 
       - name: Run Cypress tests
-        run: npx cypress run --browser chrome --headless
+        run: npx cypress run
+
+      - name: Run Cypress tests
+        run: npx cypress run --browser chrome --headless --verbose
 
       - name: Install Chrome
         run: sudo apt-get install google-chrome-stable
